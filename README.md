@@ -1,24 +1,7 @@
-Welcome to the comma.ai Programming Challenge!
-======
+Sample code for ML challenge.  
 
-Your goal is to predict the speed of a car from a video.
+`server.js` is an ffmpeg streamer that batches videos frames for training and testing;  with a little work it would make a great general library, but currently it is coded specifically for an odd ML challenge posed to me by some startup.
 
-- data/train.mp4 is a video of driving containing 20400 frames. Video is shot at 20 fps.
-- data/train.txt contains the speed of the car at each frame, one speed on each line.
-- data/test.mp4 is a different driving video containing 10798 frames. Video is shot at 20 fps.
+`ml.js' is the convolution network, which requires my little ML framework-in-progress [Various](https://github.com/NHQ/various), which is build on TensorFlow.js, using only base matrix operations.
 
-Deliverable
------
-
-Your deliverable is test.txt. E-mail it to givemeajob@comma.ai, or if you think you did particularly well, e-mail it to George.
-
-Evaluation
------
-
-We will evaluate your test.txt using mean squared error. <10 is good. <5 is better. <3 is heart.
-
-Twitter
-------
-
-<a href="https://twitter.com/comma_ai">Follow us!</a>
-
+`test.js` is a lightweight check for the ffmpeg streamer output.
